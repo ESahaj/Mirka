@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+{%- assign comma = '' -%}
+{%- assign folders = '/chemie/ucivo/obrázky/|/chemie/procvicovani/|/fyzika/obrazky/|/fyzika/testy/|/fyzika/ucivo/' | split: '|' -%}
+{%- for file in site.static_files -%}
+  {%- assign directory = file.path | remove: file.name -%}
+  {%- assign extension = file.extname | downcase -%}
+  {%- if folders contains directory -%}
+    {%- if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.gif' or extension == '.webp' or extension == '.avif' or extension == '.pdf' or extension == '.doc' or extension == '.docx' -%}
+      {{- comma -}}{"path":{{- file.path | remove_first: '/' | jsonify -}},"version":{{- file.modified_time | date: '%s' | jsonify -}}}
+      {%- assign comma = ',' -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+]

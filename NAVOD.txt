@@ -1,0 +1,52 @@
+LAB – CHEMIE & FYZIKA
+
+STRUKTURA WEBU
+Úvod → Chemie → Učivo / Procvičování.
+Chemie → Učivo → Obrázky.
+Úvod → Fyzika → Obrázky / Testy / Učivo.
+Každá sekce má vlastní adresu za znakem #. Funguje tlačítko Zpět.
+
+KAM DÁVAT SOUBORY
+chemie/ucivo/obrázky → obrázky a PDF do chemie
+fyzika/obrazky   → obrázky a PDF do fyziky
+chemie/procvicovani → procvičování jako PDF nebo obrázky
+fyzika/testy     → testy jako PDF nebo obrázky
+fyzika/ucivo     → učivo jako PDF nebo obrázky
+
+U chemie je složka obrázky S DIAKRITIKOU, u fyziky zůstává obrazky bez diakritiky. Soubory vkládejte přímo do ní,
+ne do další podsložky. Popisky vznikají z názvů souborů.
+Testy jsou materiály k otevření; web je sám nevyhodnocuje.
+Žádné nahrávání nebo vybírání složky na stránce není.
+Podporováno: JPG, JPEG, PNG, GIF, WEBP, AVIF, PDF, DOC a DOCX (i velké přípony).
+Word dokument se po kliknutí otevře nebo stáhne podle nastavení prohlížeče.
+Pro spolehlivé zobrazení přímo ve stránce doporučujeme také uložit kopii jako PDF.
+Kliknutím se obrázek zvětší nebo se otevře PDF. Zavření křížkem či Escape.
+PDF má odkaz Otevřít samostatně pro prohlížeče bez vloženého PDF náhledu.
+Testy, učivo a galerie jsou zatím prázdné, připravené pro vaše soubory.
+Úvodní ilustrace jsou dekorativní, nejsou výukovými schématy.
+
+V POČÍTAČI
+Rozbalte celý ZIP. Na Macu otevřete SPUSTIT-MAC.command, na Windows
+SPUSTIT-WINDOWS.bat. Web se otevře sám; okno spouštěče ponechte otevřené.
+Vyžaduje Python 3.8 nebo novější. Na počítači, kde web vznikl, je Python 3
+k dispozici. Jinde případně instalujte z https://www.python.org/downloads/.
+Nic dalšího se neinstaluje. Místní web nepotřebuje internet.
+HTML otevřené dvojklikem ukáže rozcestníky, pro čtení složek použijte spouštěč.
+Změny souborů se projeví do 5 sekund při otevřené sekci, mimo zvětšený náhled.
+Ukončení: zavřete okno spouštěče nebo stiskněte Ctrl+C.
+
+NA GITHUB PAGES
+1. Rozbalte ZIP. Nahrajte jeho obsah do kořene repozitáře na GitHubu:
+   index.html, app.js, styles.css, galerie.json, _config.yml, assets,
+   chemie a fyzika. Nenahrávejte ZIP ani nadřazenou složku webu.
+2. Celé složky přetáhněte z Finderu / Průzkumníka do Add file → Upload files.
+3. Potvrďte Commit changes.
+4. Settings → Pages → Deploy from a branch → main → / (root) → Save.
+5. Počkejte na dokončení publikování. Adresa webu se objeví v Settings → Pages.
+6. Další obrázky/PDF nahrávejte do odpovídajících složek a potvrďte změnu.
+
+GitHub Pages připraví seznam automaticky při každém publikování.
+Aktualizace může trvat několik minut. Ponechte galerie.json a _config.yml.
+Nepřidávejte .nojekyll. Na GitHubu není potřeba Python ani spouštěč.
+Místní složky a GitHub se samy nesynchronizují, soubory na GitHub nahrajte.
+QR kód vytvořte z adresy hotového webu. Při přidání souborů se nemění.

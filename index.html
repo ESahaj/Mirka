@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Chemie a fyzika přehledně. Obrázky, testy a učivo na jednom místě.">
+  <title>LAB • Chemie & fyzika</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%230b1020'/%3E%3Cpath d='M12 10v20h17v-5H17V10z' fill='%235ae4cd'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Přejít na obsah</a>
+  <header class="site-header shell">
+    <a class="brand" href="#" aria-label="Miroslava Bělochová – úvodní rozcestník"><span class="brand-mark">MB</span><span>Miroslava Bělochová<span class="brand-sub">CHEMIE & FYZIKA</span></span></a>
+    <nav class="top-nav" aria-label="Hlavní navigace"><a href="#chemie" data-subject="chemie">Chemie</a><a href="#fyzika" data-subject="fyzika">Fyzika</a></nav>
+  </header>
+  <main id="content" class="shell" tabindex="-1">
+    <nav id="breadcrumbs" class="breadcrumbs" aria-label="Drobečková navigace" hidden></nav>
+    <div id="view"></div>
+    <noscript><p class="notice">Pro otevření rozcestníků a galerie zapněte v prohlížeči JavaScript.</p></noscript>
+  </main>
+  <footer class="shell site-footer"><span>Miroslava Bělochová / Chemie & fyzika</span><span>Prostor pro tvoji zvědavost.</span></footer>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-bar"><h2 id="viewer-title"></h2><button id="close-viewer" class="close-button" aria-label="Zavřít zvětšený soubor">✕ <span>Zavřít</span></button></div>
+    <img id="viewer-image" alt="" hidden>
+    <iframe id="viewer-pdf" title="Prohlížeč PDF" hidden></iframe>
+    <a id="open-original" target="_blank" rel="noopener" class="original-link">Otevřít samostatně ↗</a>
+  </dialog>
+</body>
+</html>

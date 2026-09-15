@@ -1,0 +1,8 @@
+Úvodní ilustrace byly vytvořeny vestavěným nástrojem ImageGen.
+Jde o dekorativní motivy, nikoli přesná výuková schémata.
+
+assets/chemie.png
+Create a premium editorial 3D artwork for a chemistry learning website for teenagers. Landscape 3:2. Deep midnight navy backdrop, luminous cyan and teal rim light. Hero subject: beautifully realistic translucent laboratory glass flasks with turquoise liquid, suspended elegant molecular ball-and-stick structures around them, subtle glass reflections and mist, bold close composition, cinematic scientific curiosity. No people, no text, no labels, no typography, no UI. Sophisticated, not childish. Objects clustered center-right, readable silhouette, rich contrast, polished materials.
+
+assets/fyzika.png
+Create a premium editorial 3D artwork for a physics learning website for teenagers. Landscape 3:2. Deep midnight navy backdrop, luminous violet and electric blue light. Hero subject: a clear triangular glass prism splitting a narrow beam of white light into a vivid spectrum, beautiful rippling light waves behind it, physically inspired artistic visualization, dynamic cinematic composition. No people, no text, no labels, no typography, no UI. Sophisticated, not childish. Objects clustered center-right, readable silhouette, rich contrast, polished materials.

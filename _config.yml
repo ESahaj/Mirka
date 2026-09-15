@@ -1,0 +1,9 @@
+title: LAB – Chemie a fyzika
+encoding: utf-8
+exclude:
+  - NAVOD.txt
+  - ILUSTRACE.txt
+  - server.py
+  - SPUSTIT-MAC.command
+  - SPUSTIT-WINDOWS.bat
+  - __pycache__
