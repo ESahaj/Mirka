@@ -1,0 +1,18 @@
+OPRAVA GALERIE NA GITHUB PAGES
+
+Příčina chyby:
+GitHub Pages publikoval galerie.json jako neupravenou šablonu. Stránka proto
+nedostala platný seznam souborů. Samotný PDF soubor Pascal_komiks.pdf je v pořádku.
+
+Postup opravy:
+1. Na GitHubu otevřete repozitář Mirka.
+2. Nahrajte a nahraďte soubor app.js z tohoto balíčku.
+3. Nahrajte soubor generate-gallery.py do hlavní složky repozitáře.
+4. Nahraďte .github/workflows/static.yml verzí z tohoto balíčku.
+5. Potvrďte Commit changes a počkejte na dokončení akce v záložce Actions.
+6. Obnovte web. Galerie načte obsah složky automaticky.
+
+Nejrychlejší opravu provede už samotná výměna app.js. Další dva soubory
+zajišťují, že se správný seznam vytvoří také při každém budoucím publikování.
+
+PDF a další soubory dále vkládejte do příslušných složek jako dosud.

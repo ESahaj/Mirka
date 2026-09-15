@@ -45,8 +45,9 @@ NA GITHUB PAGES
 5. Počkejte na dokončení publikování. Adresa webu se objeví v Settings → Pages.
 6. Další obrázky/PDF nahrávejte do odpovídajících složek a potvrďte změnu.
 
-GitHub Pages připraví seznam automaticky při každém publikování.
+Soubor .github/workflows/static.yml připraví seznam automaticky při každém publikování.
+Nahrajte proto také složku .github a soubor generate-gallery.py.
 Aktualizace může trvat několik minut. Ponechte galerie.json a _config.yml.
-Nepřidávejte .nojekyll. Na GitHubu není potřeba Python ani spouštěč.
+Na GitHubu není potřeba nic instalovat; Python se spustí automaticky při publikování.
 Místní složky a GitHub se samy nesynchronizují, soubory na GitHub nahrajte.
 QR kód vytvořte z adresy hotového webu. Při přidání souborů se nemění.
