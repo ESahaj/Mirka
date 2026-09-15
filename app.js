@@ -102,8 +102,18 @@ async function loadFiles(){
   }
   busy=true;
   try{
-    const response=await fetch('galerie.json',{cache:'no-store'});if(!response.ok)throw Error('Manifest unavailable');
-    const data=await response.json();if(!Array.isArray(data))throw Error('Invalid manifest');
+    let data;
+    if(location.hostname.endsWith('.github.io')){
+      const owner=location.hostname.slice(0,-'.github.io'.length),parts=location.pathname.split('/').filter(Boolean),repo=parts[0]||owner+'.github.io';
+      const folder=info.folder.split('/').map(encodeURIComponent).join('/');
+      const response=await fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${folder}`,{cache:'no-store'});
+      if(!response.ok)throw Error('GitHub folder unavailable');
+      const entries=await response.json();if(!Array.isArray(entries))throw Error('Invalid GitHub folder');
+      data=entries.filter(item=>item.type==='file').map(item=>({path:item.path,version:item.sha}));
+    }else{
+      const response=await fetch('galerie.json',{cache:'no-store'});if(!response.ok)throw Error('Manifest unavailable');
+      data=await response.json();if(!Array.isArray(data))throw Error('Invalid manifest');
+    }
     if(currentGeneration!==generation)return;
     const valid=/^[^/\\]+\.(jpe?g|png|webp|gif|avif|pdf|docx?)$/i;
     const files=data.map(item=>typeof item==='string'?{path:item}:item).filter(item=>item&&typeof item.path==='string'&&item.path.startsWith(info.folder+'/')&&valid.test(item.path.slice(info.folder.length+1))).sort((a,b)=>a.path.localeCompare(b.path,'cs',{numeric:true}));
